@@ -1,0 +1,84 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Definición de estilos del tema */
+@use '@angular/material' as mat;
+
+// Inclusión de los estilos comunes de Angular Material
+@include mat.core();
+
+// Definición de los mapas de colores
+$custom-primary: (
+    900: #C50000,
+    800: #D2000A,
+    700: #DF0014,
+    600: #F10019,
+    500: #FF1616,
+    400: #FB393B,
+    300: #F16464,
+    200: #F9918F,
+    100: #FFC8CD,
+    50: #FFE9EC,
+    contrast: (
+        50: black,
+        100: black,
+        200: black,
+        300: black,
+        400: black,
+        500: white,
+        600: white,
+        700: white,
+        800: white,
+        900: white,
+        A100:black,
+        A200:black,
+        A400:black,
+        A700: white,
+    )
+);
+
+$custom-secondary: (
+    900: #050A30,
+    800: #0A1C46,
+    700: #122452,
+    600: #1A2C5C,
+    500: #1F3264,
+    400: #404D77,
+    300: #5F6A8C,
+    200: #8A92AC,
+    100: #B7BDCE,
+    50: #E2E4EB,
+    contrast: (
+        50: black,
+        100: black,
+        200: black,
+        300: black,
+        400: black,
+        500: white,
+        600: white,
+        700: white,
+        800: white,
+        900: white,
+        A100: black,
+        A200: black,
+        A400: black,
+        A700: white,
+    )
+);
+
+// Definción de las paletas en base a los mapas creados
+$imperial-palette-primary: mat.define-palette($custom-primary);
+$imperial-palette-accent:  mat.define-palette($custom-secondary);
+
+// Creación cdl objeto con personalización del tema claro
+$imperial-theme: mat.define-light-theme((
+    color:(
+        primary: $imperial-palette-primary,
+        accent: $imperial-palette-accent
+    )
+));
+
+// Inclusión del tema en todos los componentes
+@include mat.all-component-themes($imperial-theme);
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,12 +1,36 @@
-.example-card {
-    max-width: 30%;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
+.card-h {
+    max-width: 50%;
 }
 
-.example-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-    background-size: cover;
+.card-header {
+    font-family: 'Racing Sans One', cursive;
 }
 
-button[mat-raised-button] {
-    margin: 0 8px;
+button[mat-fab] {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 0.25em;
+}
+
+img[mat-card-image] {
+    // object-fit: cover;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+mat-card-content {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+}
+
+span {
+    margin: 0.5em;
 }

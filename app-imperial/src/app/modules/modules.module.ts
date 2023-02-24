@@ -14,6 +14,7 @@ import { HomeComponent } from './home/home.component';
     FormsModule
   ],
   exports: [
+    
   ]
 })
 export class ModulesModule { }

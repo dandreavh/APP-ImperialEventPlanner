@@ -1,0 +1,38 @@
+/*--------------------------------------------------
+Project: Imperial Events
+Version: 1.0
+Last change: 24/02/2023
+Assignes to: Manuel Fernández Serrano
+
+[TABLA DE CONTENIDOS]
+
+1. Imagen
+2. Nav
+
+
+[CÓDIGOS DE COLOR]
+
+Color principal: rgb(255, 255, 255)
+
+[FUENTES Y TIPOGRAFÍAS]
+General: 'Montserrat', sans-serif
+--------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Racing+Sans+One&display=swap');
+
+/* 1. Imagen */
+img {
+    width: 40%;
+}
+
+/* 2. Nav */
+#navbarSupportedContent {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+ul a {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 1.2em;
+}

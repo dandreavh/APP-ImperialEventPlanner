@@ -1,19 +1,20 @@
 <mat-card class="example-card">
     <mat-card-header>
-        <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>Shiba Inu</mat-card-title>
-        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        <span class="material-icons">share</span>
     </mat-card-header>
     <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
     <mat-card-content>
-        <p>
-            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-            bred for hunting.
-        </p>
+        <h2 class="text-center">Zurich Maratón Sevilla</h2>
+        <div class="information d-flex justify-content-around">
+            <small class="mx-2"><span class="material-icons">directions_run</span> 49.5km</small>
+            <small class="mx-2"><span class="material-icons">calendar_month</span>19/02/2023</small>
+            <small class="mx-2"><span class="material-icons">place</span>Sevilla</small>
+        </div>
+        <hr>
+        <p>Siendo la salida a las 8:30 horas desde el Paseo de las Delicias, podres ver Sevilla en su mayor esplendor.</p>
     </mat-card-content>
-    <mat-card-actions>
-        <button mat-button>LIKE</button>
-        <button mat-button>SHARE</button>
+    <mat-card-actions class="d-flex justify-content-center">
+        <!--Llamar al componente boton-->
+        <button mat-button>Inscribete</button>
     </mat-card-actions>
 </mat-card>

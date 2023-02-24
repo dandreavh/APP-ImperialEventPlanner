@@ -1,8 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from './material/material.module';
+
+import { CardVerticalComponent } from '../core/card-vertical/card-vertical.component';
+
 @NgModule({
   declarations: [
+    CardVerticalComponent
   ],
   imports: [
     CommonModule,
@@ -10,6 +14,7 @@ import { MaterialModule } from './material/material.module';
   ], 
   exports: [
     MaterialModule,
+    CardVerticalComponent
   ]
 })
 export class CoreModule { }

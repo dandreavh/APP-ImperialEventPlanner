@@ -1,46 +1,73 @@
 <div class="container">
-    <h1>REGISTRO</h1>
-    <form #personForm="ngForm" (ngSubmit)="onSubmit()">
-        <div class="form-group">
-            <label for="nombre">Nombre</label>
-            <input type="text" class="form-control" name="nombre" id="nombre" required #nombre="ngModel"
-                [(ngModel)]="model.nombre">
-        </div>
-        <div class="form-group">
-            <label for="apellidos">Apellidos</label>
-            <input type="text" class="form-control" name="apellidos" id="apellidos" required #apellidos="ngModel"
-                [(ngModel)]="model.apellidos">
-        </div>
-        <div class="form-group">
-            <label for="dni">DNI</label>
-            <input type="text" class="form-control" name="dni" id="dni" required #dni="ngModel" [(ngModel)]="model.dni">
-        </div>
-        <div class="form-group">
-            <label for="direccion">Dirección</label>
-            <input type="text" class="form-control" name="direccion" id="direccion" required #direccion="ngModel"
-                [(ngModel)]="model.direccion">
-        </div>
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="text" class="form-control" name="email" id="email" required #email="ngModel"
-                [(ngModel)]="model.email">
-        </div>
-        <div class="form-group">
-            <label for="talla">Talla</label>
-            <select class="form-control" name="talla" id="talla" required #talla="ngModel" [(ngModel)]="model.talla">
-                <option *ngFor="let talla of sizes" [value]="talla">{{talla}}</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="running-club">Club de Running</label>
-            <input type="text" class="form-control" name="running-club" id="running-club" #runningClub="ngModel"
+    <h1 class="text-center">REGISTRO</h1>
+    <form class="register-form" #personForm="ngForm" (ngSubmit)="onSubmit()">
+        <!-- Nombre -->
+        <mat-form-field class="register-form-field">
+            <mat-label>Nombre</mat-label>
+            <input type="text" matInput name="nombre" id="nombre" required #nombre="ngModel" [(ngModel)]="model.nombre"
+                placeholder="Nombre">
+        </mat-form-field>
+
+        <!-- Apellidos -->
+        <mat-form-field class="register-form-field">
+            <mat-label>Apellidos</mat-label>
+            <input type="text" matInput name="apellidos" id="apellidos" required #apellidos="ngModel"
+                [(ngModel)]="model.apellidos" placeholder="Apellidos">
+        </mat-form-field>
+
+        <!-- DNI -->
+        <mat-form-field class="register-form-field">
+            <mat-label>DNI</mat-label>
+            <input type="text" matInput [formControl]="dniFormControl" name="dni" id="dni" required
+                [(ngModel)]="model.dni" placeholder="12345678X">
+            <mat-error *ngIf="dniFormControl.hasError('pattern') && !dniFormControl.hasError('required')">
+                Por favor, introduce un DNI válido
+            </mat-error>
+        </mat-form-field>
+
+        <!-- Email -->
+        <mat-form-field class="register-form-field">
+            <mat-label>Email</mat-label>
+            <input type="email" matInput [formControl]="emailFormControl" name="email" id="email" required
+                [(ngModel)]="model.email" placeholder="ejemplo@ejemplo.com">
+            <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                Por favor, introduce un email válido
+            </mat-error>
+            <mat-error *ngIf="emailFormControl.hasError('required')">
+                El Email es <strong>requerido</strong>
+            </mat-error>
+        </mat-form-field>
+
+        <!-- Direccion -->
+        <mat-form-field class="register-form-field">
+            <mat-label>Dirección</mat-label>
+            <input type="text" matInput name="direccion" id="direccion" required #direccion="ngModel"
+                [(ngModel)]="model.direccion" placeholder="Avenida de la Unidad, 5">
+        </mat-form-field>
+
+        <!-- Talla -->
+        <mat-form-field class="register-form-field">
+            <mat-label>Talla</mat-label>
+            <mat-select>
+                <mat-option name="talla" id="talla" required *ngFor="let size of sizes"
+                    [value]="size">{{size}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <!-- Club de Running -->
+        <mat-form-field class="register-form-field">
+            <mat-label>Club de Running</mat-label>
+            <input type="text" matInput name="running-club" id="running-club" #runningClub="ngModel"
                 [(ngModel)]="model.clubRunning">
-        </div>
-        <div class="form-group">
-            <label for="metodoPago">Método de pago</label>
-            <input type="text" class="form-control" name="metodoPago" id="metodoPago" #metodoPago="ngModel"
+        </mat-form-field>
+
+        <!-- Método de pago -->
+        <mat-form-field class="register-form-field">
+            <mat-label>Método de pago</mat-label>
+            <input type="text" matInput name="metodoPago" id="metodoPago" #metodoPago="ngModel"
                 [(ngModel)]="model.metodoPago">
-        </div>
+        </mat-form-field>
+
         <button type="submit" class="btn btn-success my-2" [disabled]="!personForm.form.valid">Enviar</button>
         <button type="button" class="btn btn-secondary mx-2" (click)="newPerson();personForm.reset()">Reset</button>
     </form>

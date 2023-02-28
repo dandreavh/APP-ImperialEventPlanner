@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Evento } from "../evento.model";
 
 @Component({
@@ -8,5 +8,7 @@ import { Evento } from "../evento.model";
 })
 export class CardHComponent {
 
-  evento1 = new Evento(1, 'Media Maratón Almería', 22.19, new Date(2022, 0, 27), 'Senior', 'Almería', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt obcaecati voluptas nulla reprehenderit doloremque tempora dolorem ipsa minus, corrupti vel saepe expedita quia aperiam voluptatum necessitatibus.Aut rem et ullam!');
+  // https://material.angular.io/assets/img/examples/shiba2.jpg
+
+  @Input() evento = new Evento(1, '', 0, new Date(), '', '', '', '');
 }

@@ -11,7 +11,7 @@
                         class="bi bi-person-fill" viewBox="0 0 16 16">
                         <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
                     </svg>
-                    <span>22,19 km</span>
+                    <span>{{evento.kilometros}} km</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-calendar" viewBox="0 0 16 16">
                         <path
@@ -33,8 +33,10 @@
                 </div>
                 <p>{{evento.descripcion}}</p>
                 <div class="botones">
-                    <button mat-fab extended color="primary">Clasificación</button>
-                    <button mat-fab extended color="accent">Más info</button>
+                    <app-button color="primary" texto="Clasificación"></app-button>
+                    <app-button color="accent" texto="Más info"></app-button>
+                    <!-- <button mat-fab extended color="primary">Clasificación</button>
+                    <button mat-fab extended color="accent">Más info</button> -->
                 </div>
             </div>
         </div>

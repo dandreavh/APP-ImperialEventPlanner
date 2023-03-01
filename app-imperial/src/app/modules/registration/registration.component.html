@@ -2,21 +2,21 @@
     <h1 class="text-center">REGISTRO</h1>
     <form class="register-form" #personForm="ngForm" (ngSubmit)="onSubmit()">
         <!-- Nombre -->
-        <mat-form-field class="register-form-field">
+        <mat-form-field appearance="outline" class="register-form-field">
             <mat-label>Nombre</mat-label>
             <input type="text" matInput name="nombre" id="nombre" required #nombre="ngModel" [(ngModel)]="model.nombre"
                 placeholder="Nombre">
         </mat-form-field>
 
         <!-- Apellidos -->
-        <mat-form-field class="register-form-field">
+        <mat-form-field appearance="outline" class="register-form-field">
             <mat-label>Apellidos</mat-label>
             <input type="text" matInput name="apellidos" id="apellidos" required #apellidos="ngModel"
                 [(ngModel)]="model.apellidos" placeholder="Apellidos">
         </mat-form-field>
 
         <!-- DNI -->
-        <mat-form-field class="register-form-field">
+        <mat-form-field appearance="outline" class="register-form-field">
             <mat-label>DNI</mat-label>
             <input type="text" matInput [formControl]="dniFormControl" name="dni" id="dni" required
                 [(ngModel)]="model.dni" placeholder="12345678X">
@@ -26,7 +26,7 @@
         </mat-form-field>
 
         <!-- Email -->
-        <mat-form-field class="register-form-field">
+        <mat-form-field appearance="outline" class="register-form-field">
             <mat-label>Email</mat-label>
             <input type="email" matInput [formControl]="emailFormControl" name="email" id="email" required
                 [(ngModel)]="model.email" placeholder="ejemplo@ejemplo.com">
@@ -39,14 +39,14 @@
         </mat-form-field>
 
         <!-- Direccion -->
-        <mat-form-field class="register-form-field">
+        <mat-form-field appearance="outline" class="register-form-field">
             <mat-label>Dirección</mat-label>
             <input type="text" matInput name="direccion" id="direccion" required #direccion="ngModel"
                 [(ngModel)]="model.direccion" placeholder="Avenida de la Unidad, 5">
         </mat-form-field>
 
         <!-- Talla -->
-        <mat-form-field class="register-form-field">
+        <mat-form-field appearance="outline" class="register-form-field">
             <mat-label>Talla</mat-label>
             <mat-select>
                 <mat-option name="talla" id="talla" required *ngFor="let size of sizes"
@@ -55,14 +55,14 @@
         </mat-form-field>
 
         <!-- Club de Running -->
-        <mat-form-field class="register-form-field">
+        <mat-form-field appearance="outline" class="register-form-field">
             <mat-label>Club de Running</mat-label>
             <input type="text" matInput name="running-club" id="running-club" #runningClub="ngModel"
                 [(ngModel)]="model.clubRunning">
         </mat-form-field>
 
         <!-- Método de pago -->
-        <mat-form-field class="register-form-field">
+        <mat-form-field appearance="outline" class="register-form-field">
             <mat-label>Método de pago</mat-label>
             <input type="text" matInput name="metodoPago" id="metodoPago" #metodoPago="ngModel"
                 [(ngModel)]="model.metodoPago">

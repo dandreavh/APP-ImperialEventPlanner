@@ -1,1 +1,8 @@
-<p>home works!</p>
+<h1 class="text-center">EVENTOS ANTERIORES</h1>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class=" col-lg-10" *ngFor="let evento of eventos">
+            <app-card-h [evento]="evento"></app-card-h>
+        </div>
+    </div>
+</div>

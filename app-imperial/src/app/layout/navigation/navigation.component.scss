@@ -20,15 +20,12 @@ General: 'Montserrat', sans-serif
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Racing+Sans+One&display=swap');
 
 /* 1. Imagen */
-img {
-    width: 40%;
+div a {
+    width: 10%;
 }
 
-/* 2. Nav */
-#navbarSupportedContent {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+img {
+    width: 100%;
 }
 
 ul a {

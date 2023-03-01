@@ -7,6 +7,7 @@ export class Evento {
         public fecha: Date,
         public categoria: string,
         public localidad: string,
-        public descripcion: string
+        public descripcion: string,
+        public urlImagen: string
     ) { }
 }

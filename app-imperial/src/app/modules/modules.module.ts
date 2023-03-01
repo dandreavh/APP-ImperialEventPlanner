@@ -1,9 +1,11 @@
 ;
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { RegistrationComponent } from './registration/registration.component';
 import { HomeComponent } from './home/home.component';
+import { MaterialModule } from "../core/material/material.module";
+import { CoreModule } from "../core/core.module";
 
 @NgModule({
   declarations: [
@@ -12,10 +14,13 @@ import { HomeComponent } from './home/home.component';
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    MaterialModule,
+    CoreModule
   ],
   exports: [
-    
+
   ]
 })
 export class ModulesModule { }

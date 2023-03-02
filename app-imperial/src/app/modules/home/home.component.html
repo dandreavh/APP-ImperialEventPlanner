@@ -1,0 +1,8 @@
+<h1 class="text-center">NUEVOS EVENTOS</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-4 d-flex justify-content-center" *ngFor="let evento of eventos">
+            <app-card-vertical [evento]="evento"></app-card-vertical>
+        </div>
+    </div>
+</div>

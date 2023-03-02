@@ -1,20 +1,20 @@
-<mat-card class="example-card">
+<mat-card class="card-vertical">
     <mat-card-header>
         <span class="material-icons">share</span>
     </mat-card-header>
-    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <img mat-card-image [src]="evento.urlImagen" alt="Imagen del evento">
     <mat-card-content>
-        <h2 class="text-center">Zurich Maratón Sevilla</h2>
+        <h2 class="text-center">{{evento.nombre}}</h2>
         <div class="information d-flex justify-content-around">
-            <small class="mx-2"><span class="material-icons">directions_run</span> 49.5km</small>
-            <small class="mx-2"><span class="material-icons">calendar_month</span>19/02/2023</small>
-            <small class="mx-2"><span class="material-icons">place</span>Sevilla</small>
+            <small class="mx-2"><span class="material-icons">directions_run</span>{{evento.kilometros}}km</small>
+            <small class="mx-2"><span class="material-icons">calendar_month</span>{{evento.fecha | date: 'shortDate'}}</small>
+            <small class="mx-2"><span class="material-icons">place</span>{{evento.localidad}}</small>
+            <small class="mx-2"><span class="material-icons">label</span>{{evento.categoria}}</small>
         </div>
         <hr>
-        <p>Siendo la salida a las 8:30 horas desde el Paseo de las Delicias, podres ver Sevilla en su mayor esplendor.</p>
+        <p>{{evento.descripcion}}</p>
     </mat-card-content>
-    <mat-card-actions class="d-flex justify-content-center">
-        <!--Llamar al componente boton-->
-        <button mat-button>Inscribete</button>
-    </mat-card-actions>
+    <div class="botones">
+        <button mat-fab extended color="primary">Inscripción</button>
+    </div>
 </mat-card>

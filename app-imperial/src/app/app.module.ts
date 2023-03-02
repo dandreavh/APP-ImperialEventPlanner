@@ -11,12 +11,17 @@ import { SkeletonComponent } from './layout/skeleton/skeleton.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { NavigationComponent } from './layout/navigation/navigation.component';
 
+//MODUL HOME
+import { HomeComponent } from './modules/home/home.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     SkeletonComponent,
     FooterComponent,
-    NavigationComponent
+    NavigationComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

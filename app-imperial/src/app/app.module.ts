@@ -26,7 +26,7 @@ import { HomeComponent } from './modules/home/home.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ModulesModule,
+    // ModulesModule,
     SharedModule,
     CoreModule,
   ],

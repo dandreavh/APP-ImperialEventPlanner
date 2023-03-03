@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
 
 .card-vertical {
-    width: 75%;
+    width: 100%;
+    border-radius: 20px;
 }
 
 mat-card-header {
@@ -15,7 +16,6 @@ h2 {
     font-family: 'Racing Sans One', cursive;
 }
 
-img {
-    width: 90%;
-    padding-left: 2%;
+img{
+    max-height: 155px;
 }

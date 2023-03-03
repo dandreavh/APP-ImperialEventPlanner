@@ -1,10 +1,10 @@
-<mat-card class="card-vertical mt-4">
-    <mat-card-header>
+<mat-card class="card-vertical m-auto">
+    <!-- <mat-card-header>
         <span class="material-icons">share</span>
-    </mat-card-header>
-    <img mat-card-image [src]="evento.urlImagen" alt="Imagen del evento">
+    </mat-card-header> -->
+    <img mat-card-image [src]="evento.urlImagen" alt="Imagen del evento" class="h-75">
     <mat-card-content>
-        <h2 class="text-center">{{evento.nombre}}</h2>
+        <h2 class="text-center mb-1">{{evento.nombre}}</h2>
         <div class="information d-flex justify-content-around">
             <small class="mx-2"><span class="material-icons">directions_run</span>{{evento.kilometros}}km</small>
             <small class="mx-2"><span class="material-icons">calendar_month</span>{{evento.fecha | date: 'shortDate'}}</small>
@@ -15,6 +15,6 @@
         <p>{{evento.descripcion}}</p>
     </mat-card-content>
     <div class="botones d-flex justify-content-center py-3">
-        <button mat-fab extended color="primary" class="py-2">Inscripción</button>
+        <app-button color="primary" texto="Inscripción"></app-button>
     </div>
 </mat-card>

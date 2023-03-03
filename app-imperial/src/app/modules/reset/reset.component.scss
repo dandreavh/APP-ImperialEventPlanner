@@ -6,7 +6,7 @@ h1, h2 {
 }
 
 h1 {
-    color: white;
+    // color: white;
     text-align: center;
     padding-top: 3%;
     font-size: 4em;
@@ -22,12 +22,21 @@ img {
     width: 30%;
 }
 
+.container-principal{
+    background-color: #D9D9D9;
+    border: 1px solid #D9D9D9;
+    border-radius: 20px;
+}
+
 .formulario {
+    width: 75%;
     text-align: center;
     background-color: #F1F1F1;
     padding: 5%;
     border: 1px solid #F1F1F1;
     border-radius: 20px;
+    margin-right: 0;
+    margin-left: 150px;
 }
 
 form {

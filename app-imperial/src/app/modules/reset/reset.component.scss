@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Racing+Sans+One&display=swap');
+
+h1 {
+    font-family: 'Racing Sans One', cursive;
+}
+
 img{
     width: 50%;;
 }
@@ -8,6 +15,8 @@ form{
 
 .global{
     width: 75%;
+    font-family: 'Montserrat', sans-serif;
     border-radius: 2%;
-    background-color: #D9D9D9;
+    // background-color: #D9D9D9;
+    margin: auto!important;
 }

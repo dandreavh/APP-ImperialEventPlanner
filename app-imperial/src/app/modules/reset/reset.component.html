@@ -1,38 +1,40 @@
-<div class="container">
-    <h1>CAMBIAR CONTRASEÑA</h1>
-    <app-linea-divisor-rojo></app-linea-divisor-rojo>
-        <div class="row formulario mb-5">
-            <div class="col-lg-6">
-                <form class="register-form" >
-                    <!-- Nueva contraseña -->
-                    <mat-form-field appearance="outline" class="register-form-field">
-                        <mat-label>Nueva Contraseña</mat-label>
-                        <input type="password" matInput name="nuevaPassword" id="nuevaPassword" required>
-                    </mat-form-field>
+<div class="container py-4">
+    <div class="container-principal">
+            <h1>CAMBIAR CONTRASEÑA</h1>
+            <app-linea-divisor-rojo></app-linea-divisor-rojo>
+            <div class="row formulario mb-4">
+                <div class="col-lg-6">
+                    <form class="register-form" >
+                        <!-- Nueva contraseña -->
+                        <mat-form-field appearance="outline" class="register-form-field">
+                            <mat-label>Nueva Contraseña</mat-label>
+                            <input type="password" matInput name="nuevaPassword" id="nuevaPassword" required>
+                        </mat-form-field>
 
-                    <!-- Confirmación nueva contraseña -->
-                    <mat-form-field appearance="outline" class="register-form-field">
-                        <mat-label>Confirmar Contraseña</mat-label>
-                        <input type="password" matInput name="confirmacionNuevaPassword" id="confirmacionNuevaPassword" required>
-                    </mat-form-field>
+                        <!-- Confirmación nueva contraseña -->
+                        <mat-form-field appearance="outline" class="register-form-field">
+                            <mat-label>Confirmar Contraseña</mat-label>
+                            <input type="password" matInput name="confirmacionNuevaPassword" id="confirmacionNuevaPassword" required>
+                        </mat-form-field>
 
-                    <!-- Correo de verificación -->
-                    <mat-form-field appearance="outline" class="register-form-field">
-                        <mat-label>Email de confirmación</mat-label>
-                        <input type="email" matInput name="emailConfirmacion" id="emailConfirmacion" required>
-                    </mat-form-field>
+                        <!-- Correo de verificación -->
+                        <mat-form-field appearance="outline" class="register-form-field">
+                            <mat-label>Email de confirmación</mat-label>
+                            <input type="email" matInput name="emailConfirmacion" id="emailConfirmacion" required>
+                        </mat-form-field>
 
-                    <app-button texto="Confirmar"></app-button>
-                </form>
-            </div>
-            <div class="col-lg-6">
-                <img src="../../../assets/images/logoFooter.svg" alt="Logo reset">
-                <div class="informacion text-center">
-                    <p>Utiliza una contraseña segura</p>
-                    <p>No la compartas con nadie</p>
-                    <p>Usa contraseñas distintas</p>
+                        <app-button texto="Confirmar"></app-button>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <img src="../../../assets/images/logoFooter.svg" alt="Logo reset">
+                    <div class="informacion text-center">
+                        <p>Utiliza una contraseña segura</p>
+                        <p>No la compartas con nadie</p>
+                        <p>Usa contraseñas distintas</p>
+                    </div>
                 </div>
             </div>
-        </div>
+    </div>
 </div>
 

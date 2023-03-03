@@ -11,7 +11,7 @@ import { Evento } from "../../core/evento.model";
 
 export class HomeComponent implements OnInit {
 
-    eventos: Evento2[] = [];
+    eventos2: Evento2[] = [];
     
     eventos: Evento[] = [];
 

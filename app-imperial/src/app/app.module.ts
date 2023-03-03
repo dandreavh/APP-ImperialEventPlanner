@@ -17,7 +17,7 @@ import { NavigationComponent } from './layout/navigation/navigation.component';
     AppComponent,
     SkeletonComponent,
     FooterComponent,
-    NavigationComponent
+    NavigationComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,7 +25,7 @@ import { NavigationComponent } from './layout/navigation/navigation.component';
     BrowserAnimationsModule,
     ModulesModule,
     SharedModule,
-    CoreModule
+    CoreModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

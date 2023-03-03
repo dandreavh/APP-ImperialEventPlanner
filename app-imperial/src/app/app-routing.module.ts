@@ -4,7 +4,6 @@ import { SkeletonComponent } from './layout/skeleton/skeleton.component';
 import { HomeComponent } from './modules/home/home.component';
 
 //HOME COMPONENT
-import { HomeComponent } from './modules/home/home.component';
 //RESET COMPONENT
 import { ResetComponent } from './modules/reset/reset.component';
 
@@ -16,8 +15,8 @@ const routes: Routes = [
     component: SkeletonComponent,
     pathMatch: 'prefix',
     children: [
-      { path: '', component: HomeComponent  },
-      { path: 'reset', component: ResetComponent  },
+      { path: '', component: HomeComponent },
+      { path: 'reset', component: ResetComponent },
       { path: 'register', component: RegistrationComponent }
 
     ]

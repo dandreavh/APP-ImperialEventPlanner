@@ -7,7 +7,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 
 /// LINEA DIVISORA
-import {MatDividerModule} from '@angular/material/divider';
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
   declarations: [],
@@ -18,7 +18,7 @@ import {MatDividerModule} from '@angular/material/divider';
   ],
   exports: [
     MatCardModule,
-    MatDividerModule
+    MatDividerModule,
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,

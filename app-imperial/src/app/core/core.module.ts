@@ -14,7 +14,7 @@ import { CarouselComponent } from './carousel/carousel.component';
   declarations: [
     CardVerticalComponent,
     LineaDivisorRojoComponent,
-    CarouselComponent
+    CarouselComponent,
     ButtonComponent,
     CardHComponent,
     CardVerticalComponent
@@ -27,7 +27,7 @@ import { CarouselComponent } from './carousel/carousel.component';
     MaterialModule,
     CardVerticalComponent,
     LineaDivisorRojoComponent,
-    CarouselComponent
+    CarouselComponent,
     ButtonComponent,
     CardHComponent,
     CardVerticalComponent

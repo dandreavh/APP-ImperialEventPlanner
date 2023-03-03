@@ -21,8 +21,8 @@ import { CarouselComponent } from './carousel/carousel.component';
   ],
   imports: [
     CommonModule,
-    MaterialModule
-  ],
+    MaterialModule,
+  ], 
   exports: [
     MaterialModule,
     CardVerticalComponent,

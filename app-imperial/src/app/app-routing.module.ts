@@ -2,10 +2,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { SkeletonComponent } from './layout/skeleton/skeleton.component';
 import { HomeComponent } from './modules/home/home.component';
+
 //RESET COMPONENT
 import { ResetComponent } from './modules/reset/reset.component';
 
-import { RegistrationComponent } from './modules/registration/registration.component';
+import { LoginComponent } from './modules/login/login.component';
 
 const routes: Routes = [
   {
@@ -13,9 +14,9 @@ const routes: Routes = [
     component: SkeletonComponent,
     pathMatch: 'prefix',
     children: [
-      { path: '', component: HomeComponent  },
-      { path: 'reset', component: ResetComponent  },
-      { path: 'register', component: RegistrationComponent }
+      { path: '', component: HomeComponent },
+      { path: 'reset', component: ResetComponent },
+      { path: 'login', component: LoginComponent }
 
     ]
   }
@@ -23,6 +24,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class AppRoutingModule { }

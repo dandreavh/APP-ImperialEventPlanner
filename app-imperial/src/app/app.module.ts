@@ -21,7 +21,6 @@ import { HomeComponent } from './modules/home/home.component';
     SkeletonComponent,
     FooterComponent,
     NavigationComponent,
-    HomeComponent
   ],
   imports: [
     BrowserModule,

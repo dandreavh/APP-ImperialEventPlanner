@@ -1,5 +1,5 @@
 <div class="container">
-    <h3 class="text-center">REGISTRO</h3>
+    <h2 class="text-center">REGISTRO</h2>
     <app-linea-divisor-rojo></app-linea-divisor-rojo>
     <form class="register-form" #personForm="ngForm" (ngSubmit)="onSubmit()">
         <!-- Nombre -->
@@ -69,8 +69,12 @@
                 [(ngModel)]="model.metodoPago">
         </mat-form-field>
 
-        <app-button color="primary" type="submit" class="my-2 rojo" texto="Enviar"></app-button>
-        <app-button color="accent" id="reset" type="button" class="mx-2" texto="Reset"
-            (click)="newPerson();personForm.reset()"></app-button>
+        <mat-checkbox>Acepto la política de privacidad</mat-checkbox>
+
+        <div class="text-center mt-2">
+            <app-button color="primary" type="submit" class="my-2 rojo" texto="Enviar"></app-button>
+            <app-button color="accent" id="reset" type="button" class="mx-2" texto="Reset"
+                (click)="newPerson();personForm.reset()"></app-button>
+        </div>
     </form>
 </div>

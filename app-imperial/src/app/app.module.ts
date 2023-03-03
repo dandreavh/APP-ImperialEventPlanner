@@ -20,7 +20,7 @@ import { HomeComponent } from './modules/home/home.component';
     AppComponent,
     SkeletonComponent,
     FooterComponent,
-    NavigationComponent
+    NavigationComponent,
   ],
   imports: [
     BrowserModule,

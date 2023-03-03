@@ -1,8 +1,8 @@
-<mat-card class="card-h">
+<mat-card class="card-h my-2">
     <mat-card-content>
         <div class="row">
-            <div class="col-lg-4">
-                <img mat-card-image [src]="evento.urlImagen" alt="Photo of a Shiba Inu">
+            <div class="col-lg-4 ">
+                <img mat-card-image [src]="evento.urlImagen" alt="Foto del evento">
             </div>
             <div class="col-lg-8">
                 <h2 class="text-center card-header">{{evento.nombre}}</h2>
@@ -31,9 +31,10 @@
                     </svg>
                     <span>{{evento.localidad}}</span>
                 </div>
+                <hr class="mt-0">
                 <p>{{evento.descripcion}}</p>
                 <div class="botones">
-                    <app-button color="primary" texto="Clasificación"></app-button>
+                    <app-button color="primary" texto="Clasificación" class="mx-3"></app-button>
                     <app-button color="accent" texto="Más info"></app-button>
                     <!-- <button mat-fab extended color="primary">Clasificación</button>
                     <button mat-fab extended color="accent">Más info</button> -->

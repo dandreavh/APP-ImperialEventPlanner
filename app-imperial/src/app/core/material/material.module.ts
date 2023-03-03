@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {MatIconModule} from '@angular/material/icon';
+import {MatTreeModule} from '@angular/material/tree';
 import { MatCardModule } from "@angular/material/card";
 import { MatButtonModule } from "@angular/material/button";
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -13,10 +15,12 @@ import { MatDividerModule } from '@angular/material/divider';
   declarations: [],
   imports: [
     CommonModule,
-    MatCardModule,
-    MatDividerModule
+    MatIconModule,
+    MatTreeModule,
   ],
   exports: [
+    MatIconModule,
+    MatTreeModule,
     MatCardModule,
     MatDividerModule,
     MatButtonModule,

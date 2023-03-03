@@ -7,7 +7,7 @@ import { HomeComponent } from './modules/home/home.component';
 //RESET COMPONENT
 import { ResetComponent } from './modules/reset/reset.component';
 
-import { RegistrationComponent } from './modules/registration/registration.component';
+import { LoginComponent } from './modules/login/login.component';
 
 const routes: Routes = [
   {
@@ -17,7 +17,7 @@ const routes: Routes = [
     children: [
       { path: '', component: HomeComponent },
       { path: 'reset', component: ResetComponent },
-      { path: 'register', component: RegistrationComponent }
+      { path: 'login', component: LoginComponent }
 
     ]
   }

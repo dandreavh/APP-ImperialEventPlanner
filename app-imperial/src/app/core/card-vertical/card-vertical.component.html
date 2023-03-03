@@ -1,19 +1,20 @@
-<mat-card class="example-card">
+<mat-card class="card-vertical mt-4">
     <mat-card-header>
-        <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>Shiba Inu</mat-card-title>
-        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        <span class="material-icons">share</span>
     </mat-card-header>
-    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <img mat-card-image [src]="evento.urlImagen" alt="Imagen del evento">
     <mat-card-content>
-        <p>
-            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-            bred for hunting.
-        </p>
+        <h2 class="text-center">{{evento.nombre}}</h2>
+        <div class="information d-flex justify-content-around">
+            <small class="mx-2"><span class="material-icons">directions_run</span>{{evento.kilometros}}km</small>
+            <small class="mx-2"><span class="material-icons">calendar_month</span>{{evento.fecha | date: 'shortDate'}}</small>
+            <small class="mx-2"><span class="material-icons">place</span>{{evento.localidad}}</small>
+            <small class="mx-2"><span class="material-icons">label</span>{{evento.categoria}}</small>
+        </div>
+        <hr>
+        <p>{{evento.descripcion}}</p>
     </mat-card-content>
-    <mat-card-actions>
-        <button mat-button>LIKE</button>
-        <button mat-button>SHARE</button>
-    </mat-card-actions>
+    <div class="botones">
+        <button mat-fab extended color="primary">Inscripción</button>
+    </div>
 </mat-card>

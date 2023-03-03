@@ -6,16 +6,17 @@
     <h1 class="text-center">NUEVOS EVENTOS</h1>
     <div class="container">
         <div class="row">
-            <div class="col-4 d-flex justify-content-center" *ngFor="let evento of eventos">
+            <div class="col-4 d-flex justify-content-center" *ngFor="let evento of eventos2">
                 <app-card-vertical [evento]="evento"></app-card-vertical>
             </div>
-<div class="event_anteriores>
-<h1 class="text-center">EVENTOS ANTERIORES</h1>
-<div class="container">
-    <div class="row justify-content-center">
-        <div class=" col-lg-10" *ngFor="let evento of eventos">
-            <app-card-h [evento]="evento"></app-card-h>
+            <div class="event_anteriores">
+                <h1 class=" text-center">EVENTOS ANTERIORES</h1>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class=" col-lg-10" *ngFor="let evento of eventos">
+                            <app-card-h [evento]="evento"></app-card-h>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-</div>

@@ -2,9 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { SkeletonComponent } from './layout/skeleton/skeleton.component';
 import { HomeComponent } from './modules/home/home.component';
-
-//HOME COMPONENT
-import { HomeComponent } from './modules/home/home.component';
 //RESET COMPONENT
 import { ResetComponent } from './modules/reset/reset.component';
 

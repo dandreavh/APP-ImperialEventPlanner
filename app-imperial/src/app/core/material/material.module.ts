@@ -19,7 +19,7 @@ import {MatDividerModule} from '@angular/material/divider';
   ],
   exports: [
     MatCardModule,
-    MatDividerModule
+    MatDividerModule,
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,

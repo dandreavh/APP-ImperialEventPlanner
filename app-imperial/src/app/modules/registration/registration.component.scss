@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
 
+h3 {
+    font-family: 'Racing Sans One', cursive;
+    font-size: 2em;
+
 h2 {
     font-family: 'Racing Sans One', cursive;
     font-size: 2.5em;
@@ -19,4 +23,9 @@ form {
 
 .register-form-field {
     width: 100%;
+
+}
+
+div.container {
+    background-color: rgb(235, 235, 235);
 }

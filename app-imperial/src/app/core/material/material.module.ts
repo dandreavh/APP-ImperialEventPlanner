@@ -8,7 +8,6 @@ import { MatSelectModule } from '@angular/material/select';
 
 /// LINEA DIVISORA
 import {MatDividerModule} from '@angular/material/divider';
-//
 
 @NgModule({
   declarations: [],

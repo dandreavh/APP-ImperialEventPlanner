@@ -14,7 +14,7 @@ export class RegistrationComponent {
 
   sizes = ['XS', 'S', 'M', 'L', 'XL'];
 
-  model = new Person(1, 'Daniel', 'Verano', '12345678X', 'Mi Casa', 'alum.dveranom.2021@iesalixar.org', this.sizes[1], 'Imperial', 'Visa');
+  model = new Person(1, '', '', '', '', '', '', '', '');
 
   submitted = false;
 

@@ -2,13 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
 
 .card-vertical {
-    max-width: 60%;
+    width: 75%;
 }
-
-// .example-header-image {
-//     background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-//     background-size: cover;
-// }
 
 mat-card-header{
     justify-content: end;

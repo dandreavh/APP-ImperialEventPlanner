@@ -7,12 +7,14 @@ import { HomeComponent } from './home/home.component';
 import { MaterialModule } from "../core/material/material.module";
 import { CoreModule } from "../core/core.module";
 import { ResetComponent } from './reset/reset.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     RegistrationComponent,
     HomeComponent,
-    ResetComponent
+    ResetComponent,
+    LoginComponent
   ],
   imports: [
     CommonModule,

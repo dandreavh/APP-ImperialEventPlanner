@@ -1,7 +1,7 @@
 <footer class="container-fluid border-top border-danger border-3 pt-3">
-    <div class="row">
+    <div class="d-sm-flex justify-content-evenly">
         <!-- Enlaces -->
-        <div class="col">
+        <div>
             <mat-tree [dataSource]="dataSource" [treeControl]="treeControl" class="example-tree">
                 <!-- This is the tree node template for leaf nodes -->
                 <!-- There is inline padding applied to this node using styles.
@@ -30,11 +30,11 @@
             </mat-tree>
         </div>
         <!-- Logo -->
-        <div class="col">
+        <div>
             <img src="./assets/images/logo.svg" alt="Logo Imperial" class="me-5 w-75">
         </div>
         <!-- RRSS -->
-        <div class="col">
+        <div>
             <div class="d-sm-flex">
                 <mat-icon aria-hidden="false" aria-label="Icono teléfono" class="text-danger">call</mat-icon>
                 <p class="ps-3">+34 987 65 43 21</p>

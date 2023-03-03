@@ -1,0 +1,20 @@
+<mat-card class="card-vertical mt-4">
+    <mat-card-header>
+        <span class="material-icons">share</span>
+    </mat-card-header>
+    <img mat-card-image [src]="evento.urlImagen" alt="Imagen del evento">
+    <mat-card-content>
+        <h2 class="text-center">{{evento.nombre}}</h2>
+        <div class="information d-flex justify-content-around">
+            <small class="mx-2"><span class="material-icons">directions_run</span>{{evento.kilometros}}km</small>
+            <small class="mx-2"><span class="material-icons">calendar_month</span>{{evento.fecha | date: 'shortDate'}}</small>
+            <small class="mx-2"><span class="material-icons">place</span>{{evento.localidad}}</small>
+            <small class="mx-2"><span class="material-icons">label</span>{{evento.categoria}}</small>
+        </div>
+        <hr>
+        <p>{{evento.descripcion}}</p>
+    </mat-card-content>
+    <div class="botones">
+        <button mat-fab extended color="primary">Inscripción</button>
+    </div>
+</mat-card>

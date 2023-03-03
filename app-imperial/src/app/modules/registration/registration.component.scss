@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
+h1 {
+    font-family: 'Racing Sans One', cursive;
+}
+
+form {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.register-form {
+    min-width: 150px;
+    // max-width: 500px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.register-form-field {
+    width: 100%;
+}

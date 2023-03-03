@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
+.card-vertical {
+    max-width: 60%;
+}
+
+// .example-header-image {
+//     background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+//     background-size: cover;
+// }
+
+mat-card-header{
+    justify-content: end;
+    margin-bottom: 1%;
+    padding-top: 1%;
+}
+
+h2{
+    font-family: 'Racing Sans One', cursive;
+}
+
+img{
+    width: 90%;
+    padding-left: 2%;
+}

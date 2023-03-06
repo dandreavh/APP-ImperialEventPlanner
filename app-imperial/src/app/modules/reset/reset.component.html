@@ -1,37 +1,40 @@
-<div class="container-fluid global mt-lg-5 row">
-    <h1 class="text-center">REESTABLECER CONTRASEÑA</h1>
-    <div class="container-fluid d-flex justify-content-center row">
-        <div class="col col-6 d-flex justify-content-center">
-            <form class="reset_password_form">
-                <!--Nueva contraseña-->
-                <div class="form-group my-3">
-                    <label for="new_pass" class="form-label">Nuenva Contraseña:</label>
-                    <input type="password" class="form-control rounded-pill" name="new_pass" id="new_pass">
+<div class="container py-4">
+    <div class="container-principal">
+            <h1>CAMBIAR CONTRASEÑA</h1>
+            <app-linea-divisor-rojo></app-linea-divisor-rojo>
+            <div class="row formulario mb-4">
+                <div class="col-lg-6">
+                    <form class="register-form" >
+                        <!-- Nueva contraseña -->
+                        <mat-form-field appearance="outline" class="register-form-field">
+                            <mat-label>Nueva Contraseña</mat-label>
+                            <input type="password" matInput name="nuevaPassword" id="nuevaPassword" required>
+                        </mat-form-field>
+
+                        <!-- Confirmación nueva contraseña -->
+                        <mat-form-field appearance="outline" class="register-form-field">
+                            <mat-label>Confirmar Contraseña</mat-label>
+                            <input type="password" matInput name="confirmacionNuevaPassword" id="confirmacionNuevaPassword" required>
+                        </mat-form-field>
+
+                        <!-- Correo de verificación -->
+                        <mat-form-field appearance="outline" class="register-form-field">
+                            <mat-label>Email de confirmación</mat-label>
+                            <input type="email" matInput name="emailConfirmacion" id="emailConfirmacion" required>
+                        </mat-form-field>
+
+                        <app-button texto="Confirmar"></app-button>
+                    </form>
                 </div>
-                <!--confirmacion nueva contraseña-->
-                <div class="form-group my-3">
-                    <label for="new_pass_confir" class="form-label">Confirma Contraseña:</label>
-                    <input type="password" class="form-control rounded-pill" name="new_pass_confir" id="new_pass_confir">
-                </div>
-                <!--correo validacion-->
-                <div class="form-group my-3">
-                    <label for="email_confirmacion" class="form-label">Email de confirmación</label>
-                    <input type="email" class="form-control rounded-pill" name="email_confirmacion" id="email_confirmacion">
-                </div>
-                <div class="form-group my-3">
-                    <button class="btn btn-danger rounded-pill">Confirmar</button>
-                </div>
-            </form>
-        </div>
-        <div class="col col-5">
-            <div class="row d-flex justify-content-center">
-                <img src="../../../assets/images/logoFooter.svg" alt="">
-                <div class="informacion text-center">
-                    <h4>Utiliza una contraseña segura</h4>
-                    <h4>No la compartas con nadie</h4>
-                    <h4>Usa contraseñas distintas</h4>
+                <div class="col-lg-6">
+                    <img src="../../../assets/images/logoFooter.svg" alt="Logo reset">
+                    <div class="informacion text-center">
+                        <p>Utiliza una contraseña segura</p>
+                        <p>No la compartas con nadie</p>
+                        <p>Usa contraseñas distintas</p>
+                    </div>
                 </div>
             </div>
-        </div>
     </div>
 </div>
+

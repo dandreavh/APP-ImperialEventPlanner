@@ -15,15 +15,15 @@ export class HomeComponent implements OnInit {
 
     eventos: Evento[] = [];
 
-    eventoNew1 = new Evento2(1, 'Maraton Internacional Lanzarote', 22.19, new Date(2023, 0, 27), 'Senior', 'Lanzarote',
-        'La Lanzarote International Marathon transcurre a lo largo de una avenida costera, abarcando los municipios de Costa Teguise, Arrecife, San Barlotomé y Puerto del Carmen.',
+    eventoNew1 = new Evento2(1, 'Maratón Int. Lanzarote', 22.19, new Date(2023, 0, 27), 'Senior', 'Lanzarote',
+        'La Lanzarote International Marathon transcurre por los municipios costeros de Arrecife, San Barlotomé, Costa Teguise y Puerto del Carmen.',
         '/assets/images/Maraton-Internacional-de-Lanzarote.jpg');
 
     eventoNew2 = new Evento2(2, 'Maratón de Logroño', 50.19, new Date(2023, 4, 20), 'Senior', 'Logroño',
-        'Este año queremos que la Maratón Internacional Ciudad de Logroño sea una fiesta; para ello vamos a ubicar un montón de puntos de animación por todo el recorrido con bandas de música.',
-        '/assets/images/evento2V.png');
+        'Este año la Maratón Internacional de Logroño será una fiesta; para ello vamos a ubicar puntos de animación por todo el recorrido con bandas de música.',
+        '/assets/images/maraton_logrono.jpeg');
 
-    eventoNew3 = new Evento2(3, 'Maratón Valencia Trinidad Alfonso', 18.19, new Date(2023, 2, 16), 'Junio', 'Valencia',
+    eventoNew3 = new Evento2(3, 'Maratón Trinidad Alfonso', 18.19, new Date(2023, 2, 16), 'Junio', 'Valencia',
         'En el Maratón Valencia Trinidad Alfonso, el segundo más rápido del mundo (2:01:53), encontrarás un circuito idóneo para superar tu marca. ',
         '/assets/images/evento3V.jpg');
 
@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit {
         'La prueba está promovida y organizada por El club de Atletismo Corre en Zaragoza y Last Lap Slu y cuenta con la colaboración del Excelentísimo Ayuntamiento de Zaragoza.',
         '/assets/images/eventoZaragoza.jpeg');
 
-    eventoNew5 = new Evento2(5, 'Maratón Martín Fiz', 42.20, new Date(2023, 6, 14), 'Senior', 'Vitoria-Gasteiz',
+    eventoNew5 = new Evento2(5, 'Maratón Martín Fiz', 42.20, new Date(2023, 6, 14), 'Senior', 'Vitoria',
         'Organizada por Ascentium y promovida por la Asociación Deportiva Maratlon, cuenta con la homologación de la Real Federación Española de Atletismo.',
         '/assets/images/eventoFiz.jpg');
 

@@ -1,22 +1,36 @@
-<div class="row mb-4 carousel">
-    <app-carousel></app-carousel>
-</div>
-
-<div class="new_events">
-    <h1 class="text-center">NUEVOS EVENTOS</h1>
-    <div class="container">
-        <div class="row">
-            <div class="col-4 d-flex justify-content-center" *ngFor="let evento of eventos2">
-                <app-card-vertical [evento]="evento"></app-card-vertical>
-            </div>
-            <div class="event_anteriores">
-                <h1 class=" text-center">EVENTOS ANTERIORES</h1>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class=" col-lg-10" *ngFor="let evento of eventos">
-                            <app-card-h [evento]="evento"></app-card-h>
-                        </div>
-                    </div>
+<div class="container-fluid py-4">
+    <div class="row mb-4 carousel">
+        <div class="col-lg-8">
+            <app-carousel></app-carousel>
+        </div>
+        <div class="col my-auto">
+            <h2 class="text-center">Bienvenido a Imperial</h2>
+            <app-linea-divisor-rojo></app-linea-divisor-rojo>
+            <p class="text-center"> Consulta todos los nuevos eventos running</p>
+        </div>
+    </div>
+    <hr>
+    <div class="new_events">
+        <h1 class="text-center mb-0">NUEVOS EVENTOS</h1>
+        <app-linea-divisor-rojo></app-linea-divisor-rojo>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 mb-3" *ngFor="let evento of eventos2">
+                    <app-card-vertical [evento]="evento"></app-card-vertical>
                 </div>
             </div>
         </div>
+    </div>
+    <hr>
+    <div class="event_anteriores">
+        <h1 class="text-center mb-0">EVENTOS ANTERIORES</h1>
+        <app-linea-divisor-rojo></app-linea-divisor-rojo>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class=" col-lg-10" *ngFor="let evento of eventos">
+                    <app-card-h [evento]="evento"></app-card-h>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

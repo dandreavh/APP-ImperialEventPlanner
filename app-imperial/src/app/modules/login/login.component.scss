@@ -1,42 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
 
-h1, h2 {
+h1, h2, h3 {
     font-family: 'Racing Sans One', cursive;
 }
 
 h1 {
-    // color: white;
+    color: white;
     text-align: center;
     padding-top: 3%;
     font-size: 4em;
 }
 
-p { 
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.3em;
+h2 { 
+    font-size: 2.5em;
+    padding-top: 1%;
     margin-bottom: 0;
 }
 
-img {
-    width: 30%;
-}
-
-.container-principal{
-    background-color: #D9D9D9;
-    border: 1px solid #D9D9D9;
-    border-radius: 20px;
+h3 {
+    font-size: 2.5em;
+    text-align: center;
 }
 
 .formulario {
-    width: 75%;
     text-align: center;
     background-color: #F1F1F1;
-    padding: 5%;
+    padding: 2%;
     border: 1px solid #F1F1F1;
     border-radius: 20px;
-    margin-right: 0;
-    margin-left: 150px;
+    width: 75%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.texto {
+    padding-top: 15%;
+    width: 75%;
+    color: white;
+}
+
+ul {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+}
+
+ul li {
+    padding: 2%;
 }
 
 form {
@@ -52,4 +65,5 @@ form {
 
 .register-form-field {
     width: 100%;
+
 }

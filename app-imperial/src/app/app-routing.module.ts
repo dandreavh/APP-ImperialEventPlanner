@@ -8,6 +8,9 @@ import { ResetComponent } from './modules/reset/reset.component';
 
 import { LoginComponent } from './modules/login/login.component';
 
+// RACE INSCRIPTION COMPONENT
+import { RaceInscriptionComponent } from './modules/race-inscription/race-inscription.component';
+
 const routes: Routes = [
   {
     path: '',
@@ -16,8 +19,8 @@ const routes: Routes = [
     children: [
       { path: '', component: HomeComponent },
       { path: 'reset', component: ResetComponent },
-      { path: 'login', component: LoginComponent }
-
+      { path: 'login', component: LoginComponent },
+      { path: 'raceInscription', component: RaceInscriptionComponent },
     ]
   }
 ];

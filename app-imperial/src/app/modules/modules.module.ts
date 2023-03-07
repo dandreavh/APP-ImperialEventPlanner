@@ -8,13 +8,15 @@ import { MaterialModule } from "../core/material/material.module";
 import { CoreModule } from "../core/core.module";
 import { ResetComponent } from './reset/reset.component';
 import { LoginComponent } from './login/login.component';
+import { RaceInscriptionComponent } from './race-inscription/race-inscription.component';
 
 @NgModule({
   declarations: [
     RegistrationComponent,
     HomeComponent,
     ResetComponent,
-    LoginComponent
+    LoginComponent,
+    RaceInscriptionComponent
   ],
   imports: [
     CommonModule,

@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
         '/assets/images/evento3V.jpg');
 
     eventoNew4 = new Evento2(4, 'Maratón de Zaragoza', 42.19, new Date(2023, 5, 23), 'Senior', 'Zaragoza',
-        'La prueba está promovida y organizada por El club de Atletismo Corre en Zaragoza y Last Lap Slu y cuenta con la colaboración del Excelentísimo Ayuntamiento de Zaragoza.',
+        'La prueba está promovida y organizada por El club de Atletismo Corre en Zaragoza y Last Lap Slu y con la colaboración del Ayuntamiento de Zaragoza.',
         '/assets/images/eventoZaragoza.jpeg');
 
     eventoNew5 = new Evento2(5, 'Maratón Martín Fiz', 42.20, new Date(2023, 6, 14), 'Senior', 'Vitoria',

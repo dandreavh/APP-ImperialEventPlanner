@@ -3,16 +3,16 @@
     <app-linea-divisor-rojo></app-linea-divisor-rojo>
     <div class="row contenido">
         <div class="col-lg-6">
-            <div class="row formulario">
+            <div class="row formulario mx-auto">
                 <h2>LOGIN</h2>
                 <app-linea-divisor-rojo></app-linea-divisor-rojo>
-                <form class="login-form" >
+                <form class="login-form">
                     <!-- Nombre -->
                     <mat-form-field appearance="fill" class="login-form-field">
                         <mat-label>Nombre</mat-label>
                         <input type="text" matInput name="nombre" id="nombre" required>
                     </mat-form-field>
-    
+
                     <!-- Contraseña -->
                     <mat-form-field appearance="fill" class="login-form-field">
                         <mat-label>Contraseña</mat-label>
@@ -22,12 +22,12 @@
                     <app-button texto="Enviar"></app-button>
                     <br>
 
-                    <mat-checkbox>Recordar mi contraseña</mat-checkbox>
+                    <mat-checkbox class="py-3">Recordar mi contraseña</mat-checkbox>
                     <br>
                     <a href="/reset">He olvidado mi contraseña</a>
                 </form>
             </div>
-            <div class="row texto">
+            <div class="row texto mx-auto">
                 <h3>¿Aún no formas parte del club?</h3>
                 <ul>
                     <li>Contenido adaptado</li>
@@ -36,7 +36,7 @@
                 </ul>
             </div>
         </div>
-        
+
         <div class="col-lg-6">
             <app-registration></app-registration>
         </div>

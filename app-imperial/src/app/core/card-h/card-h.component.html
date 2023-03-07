@@ -6,7 +6,7 @@
             </div>
             <div class="col-md-8">
                 <div>
-                    <h2 class="text-center card-header">{{evento.nombre}}</h2>
+                    <h2 class="text-center card-header px-2 pt-2">{{evento.nombre}}</h2>
                     <div class="iconos text-center my-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-person-fill" viewBox="0 0 16 16">
@@ -33,10 +33,14 @@
                         <span>{{evento.localidad}}</span>
                     </div>
                     <hr class="mt-0">
-                    <p>{{evento.descripcion}}</p>
-                    <div class="botones">
-                        <app-button color="primary" texto="Clasificación" class="mx-3"></app-button>
-                        <app-button color="accent" texto="Más info"></app-button>
+                    <p class="px-2">{{evento.descripcion}}</p>
+                    <div class="botones d-lg-flex flex-wrap">
+                        <div class="pb-2">
+                            <app-button color="primary" texto="Clasificación" class=""></app-button>
+                        </div>
+                        <div>
+                            <app-button color="accent" texto="Más info"></app-button>
+                        </div>
                         <!-- <button mat-fab extended color="primary">Clasificación</button>
                         <button mat-fab extended color="accent">Más info</button> -->
                     </div>

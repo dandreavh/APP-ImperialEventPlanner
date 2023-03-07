@@ -2,19 +2,16 @@
     <!-- <mat-card-header>
         <span class="material-icons">share</span>
     </mat-card-header> -->
-    <img mat-card-image [src]="evento.urlImagen" alt="Imagen del evento" class="card-img-top" style="height: 150px;">
+    <img mat-card-image [src]="evento.urlImagen" alt="Imagen del evento" class="card-img-top">
     <mat-card-content class="card-body">
-        <h2 class="card-title text-center mb-2">{{evento.nombre}}</h2>
+        <h2 class="card-title text-center mb-2 pt-2">{{evento.nombre}}</h2>
         <div class="card-text">
             <div>
-                <div>
-                    <small class="mx-1"><span class="material-icons">directions_run</span>{{evento.kilometros}}km</small>
-                    <small class="mx-1"><span class="material-icons">calendar_month</span>{{evento.fecha | date: 'shortDate'}}</small>
-                </div>
-                <div>
-                    <small class="mx-1"><span class="material-icons">place</span>{{evento.localidad}}</small>
-                    <small class="mx-1"><span class="material-icons">label</span>{{evento.categoria}}</small>
-                </div>
+                <small class="mx-1"><span class="material-icons">directions_run</span>{{evento.kilometros}}km</small>
+                <small class="mx-1"><span class="material-icons">calendar_month</span>{{evento.fecha | date:
+                    'shortDate'}}</small>
+                <small class="mx-1"><span class="material-icons">place</span>{{evento.localidad}}</small>
+                <small class="mx-1"><span class="material-icons">label</span>{{evento.categoria}}</small>
             </div>
             <hr class="my-1">
             <p>{{evento.descripcion}}</p>

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
 
+// Cabecera
 h1, h2, h3 {
     font-family: 'Racing Sans One', cursive;
 }
@@ -23,6 +24,16 @@ h3 {
     text-align: center;
 }
 
+// Contenido
+.contenido {
+    padding-top: 2%;
+}
+
+// Formulario Login
+form {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .formulario {
     text-align: center;
     background-color: #F1F1F1;
@@ -32,11 +43,23 @@ h3 {
     width: 75%;
 }
 
+.login-form {
+    min-width: 150px;
+    width: 75%;
+    margin: 0 auto;
+
+    &-field{
+        width: 100%;
+    }
+
+}
+
 a {
     color: black;
     text-decoration: none;
 }
 
+// Texto debajo formulario
 .texto {
     padding-top: 15%;
     width: 75%;
@@ -46,24 +69,9 @@ a {
 ul {
     font-family: 'Montserrat', sans-serif;
     font-size: 2em;
-}
+    padding-left: 12%;
 
-ul li {
-    padding: 2%;
-}
-
-form {
-    font-family: 'Montserrat', sans-serif;
-}
-
-.register-form {
-    min-width: 150px;
-    // max-width: 500px;
-    width: 75%;
-    margin: 0 auto;
-}
-
-.register-form-field {
-    width: 100%;
-
+    li {
+        padding: 2%;
+    }
 }

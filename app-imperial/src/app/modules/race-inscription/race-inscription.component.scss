@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Racing+Sans+One&display=swap');
+
+h3 {
+    font-family: 'Racing Sans One', cursive;
+    font-size: 2em;
+}
+
+h2 {
+    font-family: 'Racing Sans One', cursive;
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+
+form {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.register-form {
+    min-width: 150px;
+    // max-width: 500px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.register-form-field {
+    width: 100%;
+}
+
+div.container {
+    background-color: rgb(235, 235, 235);
+    border: 1px solid #F1F1F1;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+.card{
+    border: 1px solid #F1F1F1;
+    border-radius: 20px;
+}

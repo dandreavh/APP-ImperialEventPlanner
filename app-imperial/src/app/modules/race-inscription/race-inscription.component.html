@@ -1,0 +1,104 @@
+
+<div class="container">
+    <h2 class="text-center">INSCRIPCIÓN</h2>
+    <app-linea-divisor-rojo></app-linea-divisor-rojo>
+    <div class="row mt-4">
+        <!-- Datos evento -->
+        <div class="col-md">
+            <!-- <app-card-vertical></app-card-vertical> -->
+            <mat-card class="card-vertical card">
+                <!-- <mat-card-header>
+                    <span class="material-icons">share</span>
+                </mat-card-header> -->
+                <img mat-card-image src="/assets/images/Maraton-Internacional-de-Lanzarote.jpg" alt="Imagen del evento" class="card-img-top mb-4">
+                <mat-card-content class="card-body">
+                    <h2 class="card-title text-center mb-2">Maratón Int. Lanzarote</h2>
+                    <div class="card-text mt-4">
+                        <div class="text-center">
+                            <div>
+                                <small class="mx-1"><span class="material-icons">directions_run</span>22.19 km</small>
+                                <small class="mx-1"><span class="material-icons">calendar_month</span>27/01/2023</small>
+                            </div>
+                            <div>
+                                <small class="mx-1"><span class="material-icons">place</span>Lanzarote</small>
+                                <small class="mx-1"><span class="material-icons">label</span>Senior</small>
+                            </div>
+                        </div>
+                        <hr class="mb-4">
+                        <p class="px-4">La Lanzarote International Marathon transcurre por los municipios costeros de Arrecife, San Barlotomé, Costa Teguise y Puerto del Carmen.</p>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <!-- Formulario -->
+        <div class="col-md">
+            <form class="register-form" #personForm="ngForm" (ngSubmit)="onSubmit()">
+                <!-- Nombre -->
+                <mat-form-field appearance="fill" class="register-form-field">
+                    <mat-label>Nombre</mat-label>
+                    <input type="text" matInput name="nombre" id="nombre" required #nombre="ngModel" [(ngModel)]="model.nombre"
+                        placeholder="Nombre">
+                </mat-form-field>
+                <!-- Apellidos -->
+                <mat-form-field appearance="fill" class="register-form-field">
+                    <mat-label>Apellidos</mat-label>
+                    <input type="text" matInput name="apellidos" id="apellidos" required #apellidos="ngModel"
+                        [(ngModel)]="model.apellidos" placeholder="Apellidos">
+                </mat-form-field>
+                <!-- DNI -->
+                <mat-form-field appearance="fill" class="register-form-field">
+                    <mat-label>DNI</mat-label>
+                    <input type="text" matInput [formControl]="dniFormControl" name="dni" id="dni" required
+                        [(ngModel)]="model.dni" placeholder="12345678X">
+                    <mat-error *ngIf="dniFormControl.hasError('pattern') && !dniFormControl.hasError('required')">
+                        Por favor, introduce un DNI válido
+                    </mat-error>
+                </mat-form-field>
+                <!-- Email -->
+                <mat-form-field appearance="fill" class="register-form-field">
+                    <mat-label>Email</mat-label>
+                    <input type="email" matInput [formControl]="emailFormControl" name="email" id="email" required
+                        [(ngModel)]="model.email" placeholder="ejemplo@ejemplo.com">
+                    <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                        Por favor, introduce un email válido
+                    </mat-error>
+                    <mat-error *ngIf="emailFormControl.hasError('required')">
+                        El Email es <strong>requerido</strong>
+                    </mat-error>
+                </mat-form-field>
+                <!-- Dirección -->
+                <mat-form-field appearance="fill" class="register-form-field">
+                    <mat-label>Dirección</mat-label>
+                    <input type="text" matInput name="direccion" id="direccion" required #direccion="ngModel"
+                        [(ngModel)]="model.direccion" placeholder="Avenida de la Unidad, 5">
+                </mat-form-field>
+                <!-- Talla -->
+                <mat-form-field appearance="fill" class="register-form-field">
+                    <mat-label>Talla</mat-label>
+                    <mat-select>
+                        <mat-option name="talla" id="talla" required *ngFor="let size of sizes"
+                            [value]="size">{{size}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <!-- Club de Running -->
+                <mat-form-field appearance="fill" class="register-form-field">
+                    <mat-label>Club de Running</mat-label>
+                    <input type="text" matInput name="running-club" id="running-club" #runningClub="ngModel"
+                        [(ngModel)]="model.clubRunning">
+                </mat-form-field>
+                <!-- Método de pago -->
+                <mat-form-field appearance="fill" class="register-form-field">
+                    <mat-label>Método de pago</mat-label>
+                    <input type="text" matInput name="metodoPago" id="metodoPago" #metodoPago="ngModel"
+                        [(ngModel)]="model.metodoPago">
+                </mat-form-field>
+                <mat-checkbox>Acepto la política de privacidad</mat-checkbox>
+                <div class="text-center mt-2">
+                    <app-button color="primary" type="submit" class="my-2 rojo" texto="Enviar"></app-button>
+                    <app-button color="accent" id="reset" type="button" class="mx-2" texto="Reset"
+                        (click)="newPerson();personForm.reset()"></app-button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

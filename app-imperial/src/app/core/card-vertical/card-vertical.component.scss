@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
 
 .card-vertical {
-    width: 100%;
     border-radius: 20px;
 }
 
@@ -16,6 +15,10 @@ h2 {
     font-family: 'Racing Sans One', cursive;
 }
 
-img{
-    max-height: 155px;
+.material-icons{
+    font-size: 1em;
+}
+
+a{
+    text-decoration: none;
 }
